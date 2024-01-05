@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>SriEshwar Conference</title>
+<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+    <center><h1 style="color:aquamarine">SriEshwar Tech.Inc</h1></center>
+    <center><h1>SriEshwar Conference Registration Form</h1></center>
+<form name="myform" action="Result.html" onsubmit="return validateForm()" method="post">
+   <table class="table" cellspacing="2" cellpadding="2">
+<tr>
+<td>Name:</td><td><input type="text" name="fname" id="name" placeholder="Enter name "/></td>
+</tr>
+<tr>
+<td>Email:</td><td><input type="email" name="femail" id="email" placeholder="Enter your email"/></td>
+</tr>
+<tr>
+<td>Country Code:</td><td><input type="number" name="fnum" id="number" placeholder="+91"/></td>
+<tr>
+<td>Phone Number:</td><td><input type="number" name="num" id="number"/></td>
+</tr>
+<tr>
+<td>Company Name:</td><td><input type="text" name="cname" id="cname"/></td>
+</tr>
+<tr>
+<td>Job Title:</td><td><input type="text" name="jtitle" id="jtitle" /></td>
+</tr>
+<tr>
+<td><lable >Gender</lable></td>
+<td><label for="Male">Male:</label>
+<input type="radio" name="Gender" id="Male"></td>
+<td><label for="Female">Female:</label>
+<input type="radio" name="Gender" id="Female"></td>
+</tr>
+<tr>
+<td>Age:</td><td><input type="number" name="age" id="age"/></td>
+</tr>
+<tr>
+<td>Country:</td><td><input type="text" name="Country" id="country" placeholder="Entre the country name" /></td>
+</tr>
+<tr>
+<td>City:</td><td><input type="text" name="City" id="city" placeholder="Enter your city"/></td>
+</tr>
+<tr>
+<td><label for="Dietary Preferences">Dietary Preferences:</label></td>
+                   <td> <select name="Dietary Preferences" id="Dietary Preferences" multiple>
+                       <optgroup label="Veg">
+                          <option>Pongal</option>
+                          <option>Pori</option>
+                          <option>Dosa</option>
+                          <option>Tomato Rice</option>
+                       </optgroup>
+                    </select></td>
+                       <td> <select name="Dietary Preferences" id="Dietary Preferences" multiple>
+                           <optgroup label="Non-Veg">
+                              <option>Chicken Biriyani</option>
+                              <option>Fish Fry</option>
+                              <option>Chicken 65</option>
+                              <option>Egg Biriyani</option>
+                           </optgroup>
+                        </select></td>
+                        </tr>
+                        <tr>
+            <td> <label for="T-Shirt Size">T-Shirt Size:</label></td>
+                    <td><select name="T-Shirt Size" id="T-ShirtSize">
+                      <optgroup label="T-ShirtSize">
+                          <option>S</option>
+                           <option>M</option>
+                          <option>L</option>
+                          <option>XL</option>
+                          <option>XXL</option>
+                         </optgroup>
+                    </select></td>
+                    </tr>
+                    <tr>
+            <td>Preferred T-shirt color:</td><td><input type="color" name="T-shirt Color" id="Preferred T-shirt Color"/></td>
+            </tr>
+            <tr>
+                <td>Session Preferences:</td>
+                <td><label for = "Session 1">Session 1 </label>
+                  <td><input type="checkbox" name ="Session Preferences" id="Session 1"></td>
+                  <td> <label for = "Session 2">Session 2 </label>
+                  <td><input type="checkbox" name ="Session Preferences" id="Session 2"></td>
+                  <td><label for = "Session 3">Session 3 </label>
+                  <td><input type="checkbox" name ="Session Preferences" id="Session 3"></td>
+                </tr>
+                <tr>
+                <td><label for="Workshop Selection">Workshop Selection</label></td>
+                <td><select name="Workshop" id="Workshop Selection">
+                <optgroup label="Workshop Selection">
+                      <option>Bidder Street Motors</option>
+                      <option>Auto Gurdians Car</option>
+                      <option>Five Speed Motors</option>
+                      <option>Fantastic Garage</option>
+                   </optgroup>
+                </select></td>
+                </tr>
+                <tr>
+               <td><label for="Date of attending the workshop">Date of attending the workshop</label></td>
+                <td><select name="Date" id="Date of attending the workshop">
+                <optgroup label="Date of attending the workshop">
+                       <option>25 oct 2023</option>
+                       <option>26 oct 2023</option>
+                       <option>27 oct 2023</option>
+                    </optgroup>
+                 </select></td>
+                 </tr>
+                 <tr>
+                 <td><label>Will you bring a guest?</label></td>
+                    <td><label for="guest">Yes</label>
+                    <input type="radio" name="guest" id="guest">
+                    <label for="guest">No</label>
+                    <input type="radio" name="guest" id="guest"></td>
+                    </tr>
+                    <tr>
+           <td>Guest Name:</td><td><input type="text" name="guest name" id="name"/></td>
+           </tr>
+           <tr>
+                    <td><label for="Guest Dietary Preferences">Guest's Dietary Preferences:</label></td>
+                            <td><select name="Dietary Preferences" id="Dietary Preferences" multiple>
+                               <optgroup label="Veg">
+                                  <option>Pongal</option>
+                                  <option>Pori</option>
+                                  <option>Dosa</option>
+                                  <option>Tomato Rice</option>
+                               </optgroup>
+                            </select></td>
+                               <td> <select name="Dietary Preferences" id="Dietary Preferences" multiple>
+                                   <optgroup label="Non-Veg">
+                                      <option>Chicken Biriyani</option>
+                                      <option>Fish Fry</option>
+                                      <option>Chicken 65</option>
+                                      <option>Egg Biriyani</option>
+                                   </optgroup>
+                                </select></td>
+                                </tr>
+                                <tr>
+             <td><label required>Preferred Payment Method:</label></td>
+                    <td><label for = "PaymentMethod">Credit Card</label>
+                    <input type="radio" name ="PaymentMethod" id="Credit Card">
+                    <label for = "Payment Method">Debit Card</label>
+                    <input type="radio" name = "Payment Method" id="Debit Card"></td>
+                    </tr>
+                    <tr>
+             <td>Card Number:</td><td><input type="number" name="cnum" id="cnumber"/></td>
+             </tr>
+             <tr>
+             <td>Card Expiration Date:</td><td><input type="month" name="expiry date" id="expiry date"/></td>
+             </tr>
+             <tr>
+             <td>Card CVV:</td><td><input type="password" name="Card CVV" id="Card CVV" max="3"/></td>
+             </tr>
+             <tr>
+             <td>Billing Address:</td><td><textarea name="address" id="address" cols="15"
+             rows="5" placeholder="Enter your Billing Address"></textarea></td>
+             </tr>
+             <tr>
+             <td><label>How did you hear about us?</label></td>
+                  <td> <label for="Advertisement">Advertisement</label>
+                    <input type="checkbox" name="about us" id="advertisement"></td>
+                    <td><label for="Website">Website</label>
+                    <input type="checkbox" name="about us" id="Website"></td>
+                    <td><label for="Posters">Posters</label>
+                    <input type="checkbox" name="about us" id="Posters"></td>
+                    <td><label for="Others">Others</label>
+                    <input type="checkbox" name="about us" id="Others"></td>
+                    </tr>
+                    <tr>
+                    <td><label for=upload> Upload Photo for ID Card</label></td>
+                    <td><input type="file" name="upload photo" id="upload photo"
+                        accept.file="jpg"></td>
+                     </tr>
+                     <tr>
+                    <td><label for=profile>Collect Profile</label></td>
+                    <td><input type="file" name="upload profile" id="upload profile"
+                        accept.file="pdf" enctype="multipart/form-data"></td>
+                        </tr>
+                <tr>
+            <td><button type="submit">Submit</button></td>
+            <td><button type="reset">Reset</button></td>
+            </tr>
+    </table>
+</form>
+</body>
+</html>
